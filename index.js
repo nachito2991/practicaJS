@@ -1,6 +1,17 @@
 
-alert("Ingrese la opcion del producto que desea llevar, para salir ingrese 0")
-let seleccionarProductos = Number(prompt( "1-Kilo $1200 2-Medio kilo $750 3-Cuarto kilo $450 4-Cucurucho $300"))
+
+let seleccionarProductos =    ["1-Kilo de helado $ 1200",
+                                "2-1/2 kilo $800",
+                                "3-1/4 $500",
+                                "4-Cucurucho grande $300" ]
+                        
+
+
+                            seleccionarProductos.push("5-cucurucho chico $200");
+
+console.log (seleccionarProductos)
+
+
 let seleccionarCantidad;
 let total = 0;
 
