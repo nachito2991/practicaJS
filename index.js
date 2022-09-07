@@ -37,8 +37,13 @@ while (seleccionarProductos != 0) {
      
     break;
     case 4:
-      seleccionarCantidad = Number(prompt("el producto seleccionado es cucurucho, cuantos potes"))
+      seleccionarCantidad = Number(prompt("el producto seleccionado es cucurucho, cuantos quiere"))
       total += cantidad(seleccionarCantidad, 300)
+      case 5:
+        seleccionarCantidad = Number(prompt("el producto seleccionado es cucurucho chico, indique cuantos quiere"))
+        total += cantidad(seleccionarCantidad, 200)
+       
+      break;
 
     default:
       break;
