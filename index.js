@@ -9,7 +9,7 @@ let seleccionarProductos =    ["1-Kilo de helado $ 1200",
 
                             seleccionarProductos.push("5-cucurucho chico $200");
 
-console.log (seleccionarProductos)
+
 
 
 let seleccionarCantidad;
@@ -37,13 +37,11 @@ while (seleccionarProductos != 0) {
      
     break;
     case 4:
-      seleccionarCantidad = Number(prompt("el producto seleccionado es cucurucho, cuantos quiere"))
+      seleccionarCantidad = Number(prompt("el producto seleccionado es cucurucho, cuantos potes"))
       total += cantidad(seleccionarCantidad, 300)
       case 5:
         seleccionarCantidad = Number(prompt("el producto seleccionado es cucurucho chico, indique cuantos quiere"))
         total += cantidad(seleccionarCantidad, 200)
-       
-      break;
 
     default:
       break;
