@@ -1,6 +1,7 @@
 
 
-let seleccionarProductos =    ["1-Kilo de helado $ 1200",
+let seleccionarProductos =    [
+                                "1-Kilo de helado $ 1200",
                                 "2-1/2 kilo $800",
                                 "3-1/4 $500",
                                 "4-Cucurucho grande $300" ]
@@ -8,7 +9,6 @@ let seleccionarProductos =    ["1-Kilo de helado $ 1200",
 
 
                             seleccionarProductos.push("5-cucurucho chico $200");
-
 
 
 
@@ -39,17 +39,36 @@ while (seleccionarProductos != 0) {
     case 4:
       seleccionarCantidad = Number(prompt("el producto seleccionado es cucurucho, cuantos potes"))
       total += cantidad(seleccionarCantidad, 300)
-      case 5:
-        seleccionarCantidad = Number(prompt("el producto seleccionado es cucurucho chico, indique cuantos quiere"))
-        total += cantidad(seleccionarCantidad, 200)
 
     default:
       break;
   }
-  seleccionarProductos = Number(prompt( "1-Kilo $1200 2-Medio kilo $750 3-Cuarto kilo $450 4-Cucurucho $300 "))
+  seleccionarProductos = Number(prompt( seleccionarProductos))
 }
 
 
-alert("el total de la compra es de: " + total)
+let entrada = prompt("Seleccioar gustos, al finalizar, escribe Listo");
+const pedido = [];
+while (entrada != 'Listo') {
+    pedido.push(entrada);
+    entrada = prompt("seleccioar otro gusto");
+}
+for (let index = 0; index < pedido.length; index++) {
+    alert("Gusto " + index + pedido[index]);
+}
 
 
+
+alert("el total de la compra es de: " + total);
+
+let descuento = alert ("tenemos un descueto para vos")
+
+    let descuento10 = total - (total * 0.1);
+
+    promocion =  ( total , descuento10) => {
+    
+        return total - descuento10;
+}
+
+
+console.log(descuento)
