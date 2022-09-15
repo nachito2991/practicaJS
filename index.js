@@ -59,16 +59,19 @@ for (let index = 0; index < pedido.length; index++) {
 
 
 
+
 alert("el total de la compra es de: " + total);
 
 let descuento = alert ("tenemos un descueto para vos")
-
+    
     let descuento10 = total - (total * 0.1);
 
     promocion =  ( total , descuento10) => {
     
-        return total - descuento10;
-}
+    return total - descuento10;
+  }
+
+    alert (promocion(total, descuento10));
 
 
-console.log(descuento)
+
