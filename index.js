@@ -1,4 +1,4 @@
-
+/*
 
 let seleccionarProductos =    [
                                 "1-Kilo de helado $ 1200",
@@ -73,5 +73,40 @@ let descuento = alert ("tenemos un descueto para vos")
 
     alert (promocion(total, descuento10));
 
+    */
 
 
+
+
+
+/*
+let productos = ["chocolate", "helados", "postres" ];
+let contenedor = document.getElementById("contenedor") ;
+
+for (const producto of productos) {
+  let li = document.createElement("li");
+  li.innerHTML = producto
+  contenedor.append(li);
+}
+*/
+
+let contenedor = document.getElementById("contenedor") ;
+
+let productos =[
+ {id: 1 ,prod: "helado" , precio: 1000 },
+ {id: 2, prod: "chocolate", precio: 500},
+ {id: 3, prod: "postre", precio: 300 },
+
+
+];
+
+for(const producto of productos) {
+  let div = document.createElement("div");
+  div.innerHTML = `
+  <h2>Item: ${producto.id} </h2>
+  <h3>producto ${producto.prod}</h2>
+  <h4>Precio ${producto.precio}</h2>
+  `;
+
+  contenedor.append(div);
+}
